@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #534f6e;
+  /* Updated background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Full viewport height */
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+  /* Increased margin */
+  font-size: 2rem;
+  /* Larger font size */
+}
+
+.TodoWrapper {
+  background: #34324a;
+  /* Darkened background color */
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 8px;
+  /* Increased border radius for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Added subtle box shadow */
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  /* Increased margin */
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 2px solid #534f6e;
+  /* Match body background color */
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  /* Full width */
+  color: #fff;
+  border-radius: 8px;
+  /* Increased border radius */
+  transition: border-color 0.3s ease-in-out;
+}
+
+.todo-input::placeholder {
+  color: #ffffff8a;
+}
+
+.todo-input:hover {
+  border-color: #8758ff;
+  /* Highlight border on hover */
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  /* Increased border radius */
+  transition: background 0.3s ease-in-out;
+}
+
+.todo-btn:hover {
+  background: #6f48e1;
+  /* Darkened color on hover */
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #6f48e1;
+  /* Darkened color */
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  /* Increased border radius */
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Added subtle box shadow */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.Todo:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Highlight on hover */
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted,
+.completed {
+  cursor: pointer;
+}
+
+.incompleted:hover,
+.completed:hover {
+  text-decoration: underline;
+  /* Underline on hover */
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
